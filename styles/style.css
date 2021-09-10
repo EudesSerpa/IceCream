@@ -1,10 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400,700&display=swap');
+
+:root {
+    --colorTextBody: #000;
+    --white: #fff;
+    --pink: #ff91af;
+    --cream: #ffdea6;
+    --blueGreen: #71c7c7;
+}
+
 html {
-    font-size: 82.5%;
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive;
+    font-size: 62.5%;
 }
 
 * {
-    margin: 0;
     padding: 0;
-    font-size: inherit;
-    box-sizing: border-box;
+    margin: 0;
+    box-sizing: inherit;
 }
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--white);
+    color: var(--colorTextBody);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Section Trending Products */
+.trending-products {
+    text-align: center;
+}
+/* Header */
+.trending-products--header__wrapper-img {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.trending-products--header__title {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.trending-products--header__categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.trending-products--header__categories a {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+    padding: 5px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.trending-products--header__categories a span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.loadingAnimation {
+    -webkit-animation: 2s rotateLoadingImg linear infinite;
+    animation: 2s rotateLoadingImg linear infinite;
+}
+.firstCategory { color: var(--blueGreen); }
+.secondCategory{ color: var(--pink); }
+.thirdCategory { color: var(--cream); }
+
+
+
+@keyframes rotateLoadingImg { /*Navegadores Firefox e Internet Explorer.*/
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes rotateLoadingImg { /*Navegadores que usan WebKit (Google Chrome, Safari)*/
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
