@@ -84,6 +84,18 @@ text-align:center;
 display:inline-block;
 }
 
+select{
+font-family:Nunito;
+font-size:15px;
+border-style:none;
+background-color:#ff91af;
+color:#ffffff;
+}
+option{
+background-color:white;
+color:black;
+}
+
 /*FIN COMPONENT1*/
 
 /*INICION COMPONENT2*/
