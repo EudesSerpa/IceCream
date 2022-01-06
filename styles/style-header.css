@@ -192,7 +192,6 @@ right:0;
 }*/
 .hoverCollection:hover .component2MenuStyle{
 display:block;
-transition:.4s;
 }
 
 .component2MenuStyle li a{
