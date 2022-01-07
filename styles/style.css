@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+:root {
+    --pink: #ff91af;
+    --white: #fff;
+    --cream: #ffdea6;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Chewy', cursive;
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--white);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* SECTION CONTACT  */
+.footer-news-form {
+    width: 100%;
+    height: auto;
+    padding: 15% 15px;
+    background-image: url("https://i.postimg.cc/MK5bn9Sm/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* News */
+.footer-news {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.footer-news p{
+    margin: 0 0 15px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+}
+.footer-news p:last-child {
+    font-weight: 400;
+}
+.footer-news__p--big {
+    font-size: 2.8rem;
+}
+
+/* Form */
+.footer-form__container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 40px auto 20px;
+}
+
+.footer-form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin: 15px auto;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.footer-form input[type='submit'] {
+    background-color: var(--pink);
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: color 1s 0s;
+}
+.footer-form input[type='submit']:hover {
+    background-color: var(--cream);
+    color: #000;
+}
+
+/* Navbar */
+.footer-nav {
+    width: 95%;
+    padding: 15px;
+    margin: 55px auto 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.footer-nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    transition: color 1s 0s;
+}
+.footer-nav ul li a:hover {
+    color: var(--cream);
+}
+
+
+/* SECTION BOTTOM */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-right: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--cream);
+    color: #000;
+}
+
+.footer-bottom-icons-payment {
+    width: 100%;
+    margin: 10px auto 30px auto;
+}
+.footer-bottom-icons-payment ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer-bottom-icons-payment ul li {
+    display: inline-block;
+    width: 45px;
+    height: 28px;
+    margin-right: 10px;
+}
+.footer-bottom-icons-payment ul li:last-child {
+    margin-right: 0;
+}
+
+
+.footer-bottom-logo {
+    margin-bottom: 30px;
+}
+.footer-bottom-logo img {
+    padding-top: 5px;
+}
+
+
+.footer-bottom__p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+.footer-bottom__p a {
+    font-size: 1.3rem;
+    color: #000;
+    transition: color 1s 0s;
+}
+.footer-bottom__p a:hover {
+    color: var(--pink);
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    .footer-nav ul li a {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .footer-nav ul {
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .footer-form {
+        display: block;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .footer-form input {
+        width: calc(85% / 3);
+        padding: 0 20px;
+        margin-right: 20px;
+    }
+
+    .footer-news-form {
+        padding: 5% 0;
+    }
+
+    .footer-nav ul li a {
+        padding: 0 25px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 10px 17px;
+    }
+
+    .footer-bottom-icons-payment,
+    .footer-bottom-logo,
+    .footer-bottom__p {
+        margin: 0;
+    }
+
+    .footer-bottom-icons-payment {
+        padding-right: 20px;
+    }
+
+    .footer-bottom-icons-payment ul {
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+}
+
+@media screen and (min-width: 1580px){
+    .footer-news__p--big {
+        font-size: 4rem;
+    }
+}
