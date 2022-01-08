@@ -46,7 +46,7 @@ img {
 
 main {
     min-height: 100vh;
-    margin-top: 8vh;
+    /*margin-top: 8vh;*/
 }
 
 /* HEADER */
@@ -406,6 +406,109 @@ right:17vw;
     to {-webkit-transform: rotate(360deg);}
 }
 
+/*SECTION CLIENT SAY*/
+#the-clients-say{
+background-image:url("https://i.postimg.cc/524yQ2g0/img-icecream.jpg");
+background-attachment: fixed;
+background-position:center;
+background-size:160% 160%;
+/*height:100vh;*/
+width:100%;
+padding-top:15vh;
+/*padding-bottom:20vh;*/
+
+}
+
+#component-client-say{
+text-align:center;
+width:70vw;
+margin-left:auto;
+margin-right:auto;
+}
+
+.slider-container{
+  position:relative;
+  height:50%;
+  width:100%;
+  overflow:hidden;
+}
+
+.slider-elements{
+  display:inline;
+  /*float:left;*/
+  width:50%;
+  position:relative;
+}
+
+.quotes-clients-say::before {
+content:"\e244";
+}
+
+.quotes-clients-say {
+vertical-align:middle;
+font-family: 'Material Icons Outlined';
+background-color:#ffdea6;
+width:40px;
+height:40px;
+padding-top:6px;
+margin-left:auto;
+margin-right:auto;
+border-radius:50% 50% 50% 50%;
+font-weight:400;
+font-size: 30px;
+color:black;
+}
+
+#first-img-clients-say{
+margin-bottom:20px;
+
+}
+#first-img-clients-say img{
+display:inline-block;
+}
+
+#text1-clients-say{
+font-family:"Chewy";
+font-size:40px;
+letter-spacing:4px;
+color:white;
+margin-bottom:50px;
+}
+.text2-clients-say{
+color:white; 
+line-height: 35px;
+margin-top:20px;
+}
+.details-author{
+margin-top:40px;
+margin-bottom:30px;
+}
+#space-around{
+height:50px;
+}
+.details-author div{
+display:inline-block;
+font-family:"Nunito";
+color:white;
+text-align:left;
+vertical-align:middle;
+}
+.details-author img{
+display:inline-block;
+vertical-align:middle;
+border-radius:50% 50% 50% 50%;
+margin-right:20px;
+}
+.options-clients-say div{
+display:inline-block;
+margin:5px;
+width:10px;
+height:10px;
+border-radius: 50% 50% 50% 50%;
+background-color:#ffdea6;
+}
+
+/*FIN SECTION CLIENT SAY*/
 
 /* FOOTER */
 /* Section contact  */
@@ -601,6 +704,10 @@ right:17vw;
       margin-left:auto;
       margin-right:auto;
     }
+     #text1-clients-say{
+     font-size:26px;
+     letter-spacing:1px;
+  }
     }
 
 @media screen and (max-width: 320px) {
